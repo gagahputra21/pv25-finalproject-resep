@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>443</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>421</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="list_page">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>421</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="list_panel_layout">
+       <item>
+        <widget class="QLabel" name="list_label">
+         <property name="text">
+          <string>LIST RESEP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="cari_input">
+         <property name="placeholderText">
+          <string>Masukkan judul resep anda....</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="resep_list_widget"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="refresh_btn">
+           <property name="text">
+            <string>Refresh</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="tambah_btn">
+           <property name="text">
+            <string>Tambah</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="edit_btn">
+           <property name="text">
+            <string>Edit</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="hapus_btn">
+           <property name="text">
+            <string>Hapus</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="detail_page">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>421</width>
+        <height>380</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="add_panel_layout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="3" column="3">
+          <widget class="QPushButton" name="cariGambar_btn">
+           <property name="text">
+            <string>Cari..</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Judul</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Tanggal</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Kategori</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2" colspan="2">
+          <widget class="QLineEdit" name="tanggal_input"/>
+         </item>
+         <item row="0" column="2" colspan="2">
+          <widget class="QLineEdit" name="judul_input"/>
+         </item>
+         <item row="1" column="2" colspan="2">
+          <widget class="QComboBox" name="kategori_input"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="gambar_input">
+           <property name="placeholderText">
+            <string>e.g., path/to/image.jpg</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Porsi</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Lama masak</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Gambar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2" colspan="2">
+          <widget class="QLineEdit" name="waktu_input">
+           <property name="placeholderText">
+            <string>e.g., 1 jam, 30 menit</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2" colspan="2">
+          <widget class="QLineEdit" name="porsi_input">
+           <property name="placeholderText">
+            <string>4 porsi, 8 potong</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Bahan-bahan</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="bahan_input">
+         <property name="placeholderText">
+          <string>Masukkan daftar bahan (misal: 2 butir telur, 10kg terigu)...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Cara membuat</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="cara_input">
+         <property name="placeholderText">
+          <string>Jelaskan langkah pembuatan...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="kembali_btn">
+           <property name="text">
+            <string>Kembali</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="simpan_btn">
+           <property name="text">
+            <string>Simpan</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bersihkan_btn">
+           <property name="text">
+            <string>Bersihkan</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>443</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="export_menu">
+     <property name="title">
+      <string>Export</string>
+     </property>
+     <addaction name="export_pdf_action"/>
+     <addaction name="export_csv_action"/>
+    </widget>
+    <addaction name="refresh_action"/>
+    <addaction name="export_menu"/>
+    <addaction name="exit_action"/>
+   </widget>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="about_action"/>
+   </widget>
+   <widget class="QMenu" name="edit_menu">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="tambah_action"/>
+    <addaction name="edit_action"/>
+    <addaction name="hapus_action"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="edit_menu"/>
+   <addaction name="help_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="exit_action">
+   <property name="text">
+    <string>Keluar</string>
+   </property>
+   <property name="statusTip">
+    <string>Pencet Ctrl+Q untuk keluar</string>
+   </property>
+  </action>
+  <action name="export_pdf_action">
+   <property name="text">
+    <string>ke PDF</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="export_csv_action">
+   <property name="text">
+    <string>ke CSV</string>
+   </property>
+  </action>
+  <action name="about_action">
+   <property name="text">
+    <string>Tentang</string>
+   </property>
+  </action>
+  <action name="refresh_action">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="tambah_action">
+   <property name="text">
+    <string>Tambah</string>
+   </property>
+  </action>
+  <action name="edit_action">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="hapus_action">
+   <property name="text">
+    <string>Hapus</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

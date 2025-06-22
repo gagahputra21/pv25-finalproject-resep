@@ -1,0 +1,53 @@
+
+
+QMenuBar::item:selected {
+  background-color: rgba(117, 121, 177, 0.79);
+}
+
+QStatusBar {
+    background-color: #E0E0E0;
+    color: #333;
+    font-size: 12px;
+    padding: 3px;
+}
+
+QListWidget {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px; 
+}
+
+QPushButton {
+    background-color:rgba(117, 121, 177, 0.79);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color:rgb(153, 174, 194);
+    color: black;
+}
+
+QLineEdit, QTextEdit {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 3px
+    background-color: white;
+}
+
+#cari_input {
+    border-radius: 5px
+}
+
+QListWidget::item {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
