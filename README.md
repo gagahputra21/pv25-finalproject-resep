@@ -65,3 +65,9 @@ def show_resep_view(self, resep_id):
         QMessageBox.warning(self, "Kesalahan", "Resep tidak ditemukan.")
         return...
 ```
+
+## Beberapa hasil screnshoot dari aplikasi
+![Halaman Utama](screnshoot/halaman_utama.png)
+![Tambah Resep](screnshoot/hamana_tambah.png)
+![Edit Resep](screnshoot/edit_resep.png)
+![Detail Resep](screnshoot/display_detail_bahan.png)
