@@ -1,5 +1,7 @@
 # APLIKASI RESEP
 
+## Gagah Putra Lesmana (F1D020137)
+
 ## Penjelasan aplikasi
 Aplikasi Resep dikembangakan menggunakan PyQt5 sebagai antarmuka grafis dan SQLite sebagai sistem manajemen basis data. Aplikasi ini bertujuan untuk membantu pengguna dalam menyimpan, mengelola, dan meninjau resep makanan dengan mudah. Dalam aplikasi ini, pengguna dapat menambahkan resep lengkap beserta bahan, langkah pembuatan, gambar makanan, waktu memasak, dan porsi. Selain itu, aplikasi ini menyediakan fitur ekspor data ke format PDF dan CSV.
 
